@@ -1,6 +1,6 @@
 ##I have a small application via REST API, which only need some item_id to verify the user insead of full user authentication
 
-###Changed the file "vendor/yiisoft/yii2/filters/auth/CompositeAuth.php"**
+###Changed the file "vendor/yiisoft/yii2/filters/auth/CompositeAuth.php"
 ```
     public function authenticate($user, $request, $response)
     {
