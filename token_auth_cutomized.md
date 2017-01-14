@@ -70,7 +70,7 @@ public static function isAccessTokenValid($token)
     } 
 ```
 
-###ItemID controller added the codes
+###Added the codes to ItemID controller
 
 ```
 	public function findByDeviceId($item_id)
