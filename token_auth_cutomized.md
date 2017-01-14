@@ -1,6 +1,6 @@
-I have a small application via REST API, which only need some item_id to verify the user insead of full user authentication
+##I have a small application via REST API, which only need some item_id to verify the user insead of full user authentication
 
-1. Changed the file "vendor/yiisoft/yii2/filters/auth/CompositeAuth.php"
+###Changed the file "vendor/yiisoft/yii2/filters/auth/CompositeAuth.php"**
 ```
     public function authenticate($user, $request, $response)
     {
@@ -23,7 +23,7 @@ I have a small application via REST API, which only need some item_id to verify 
 ```
 
 
-2. Changed the file "vendor/filsh/yii2-oauth2-server/filters/ErrorToExceptionFilter.php"
+###Changed the file "vendor/filsh/yii2-oauth2-server/filters/ErrorToExceptionFilter.php"
 
 ```
     public function afterAction($event)
@@ -48,7 +48,7 @@ I have a small application via REST API, which only need some item_id to verify 
         }
     }
 ```
-New Function Created:
+####New Function Created:
 
 ```
 public static function isAccessTokenValid($token)
@@ -70,7 +70,7 @@ public static function isAccessTokenValid($token)
     } 
 ```
 
-3. ItemID controller added the codes
+###ItemID controller added the codes
 
 ```
 	public function findByDeviceId($item_id)
